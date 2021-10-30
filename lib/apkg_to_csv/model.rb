@@ -23,7 +23,7 @@ module ApkgToCsv
     end
 
     def fields
-      @fields ||= model_hash["flds"].map { |f| f["name"] }
+      @fields ||= model_hash['flds'].map { |f| f['name'] }
     end
 
     private

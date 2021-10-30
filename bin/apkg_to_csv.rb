@@ -7,7 +7,7 @@ require_relative '../lib/apkg_to_csv'
 
 filename = ARGV[0]
 
-if !filename
+unless filename
   puts 'Filename required'
   exit 1
 end
@@ -24,7 +24,7 @@ Zip::File.open(filename) do |zip_file|
   end
 end
 
-if !file_written
+unless file_written
   puts 'Could not extract zip file correctly'
   exit 1
 end

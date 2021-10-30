@@ -1,7 +1,7 @@
 module ApkgToCsv
   class Note
     def self.from_db(db)
-      db.execute("SELECT mid, flds FROM notes").map do |model_id, field_string|
+      db.execute('SELECT mid, flds FROM notes').map do |model_id, field_string|
         new(model_id, field_string)
       end
     end
