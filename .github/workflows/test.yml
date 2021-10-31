@@ -18,6 +18,9 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
 
+      - name: Delete lockfile (to make sure it works with gem install)
+        run: rm Gemfile.lock
+
       - name: Install dependencies
         run: bundle install
 

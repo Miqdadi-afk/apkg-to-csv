@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    apkg-to-csv (0.1.0)
+      rubyzip (~> 2.3.0)
+      sqlite3 (~> 1.4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,10 +51,9 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  apkg-to-csv!
   bundler-audit
   gnar-style
-  rubyzip
-  sqlite3
 
 BUNDLED WITH
    2.2.30

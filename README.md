@@ -15,14 +15,18 @@ It can be difficult to work with these decks without first importing them into A
 
 ## Installation
 
+* `gem install apkg-to-csv`
+
+## Usage
+
+* `apkg-to-csv deck.apkg > deck.csv`
+
+## Development Installation
+
 ```
 gem install bundler
 bundle install
 ```
-
-## Usage
-
-* `bundle exec ruby ./bin/apkg_to_csv.rb deck.apkg > deck.csv`
 
 ## Running Tests
 

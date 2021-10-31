@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-./bin/apkg_to_csv.rb test/test.apkg > test/__compare_test.csv
+./bin/apkg-to-csv test/test.apkg > test/__compare_test.csv
 
 cmp --silent test/test.csv test/__compare_test.csv || STATUS=$?
 
