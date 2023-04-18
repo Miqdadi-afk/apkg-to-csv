@@ -11,7 +11,7 @@ It can be difficult to work with these decks without first importing them into A
 
 ## Requirements
 
-* `ruby >= 2.5`
+* `ruby >= 3.0`
 
 ## Installation
 
