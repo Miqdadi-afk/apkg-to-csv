@@ -4,5 +4,5 @@ gemspec
 
 group :development do
   gem 'bundler-audit'
-  gem 'gnar-style'
+  gem 'zfletch-style'
 end
