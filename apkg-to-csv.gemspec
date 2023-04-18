@@ -34,6 +34,6 @@ Gem::Specification.new do |spec|
   spec.bindir = 'bin'
   spec.executables = ['apkg-to-csv']
 
-  spec.add_dependency 'rubyzip', '~> 2.3.0'
-  spec.add_dependency 'sqlite3', '~> 1.4.2'
+  spec.add_dependency 'rubyzip', '~> 2.3'
+  spec.add_dependency 'sqlite3', '~> 1.6'
 end
