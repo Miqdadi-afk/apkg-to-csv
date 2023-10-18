@@ -1,3 +1,8 @@
+> [!WARNING]
+> This may not work with decks created by newer version of Anki. Hopefully this
+> will be fixed in the next release.
+> See https://github.com/zfletch/apkg-to-csv/issues/3 for more information.
+
 # APKG to CSV
 
 Convert [Anki](https://apps.ankiweb.net/) deck (`.apkg`) files to comma-separated values (`.csv`) files.
