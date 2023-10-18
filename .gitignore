@@ -1,0 +1,10 @@
+# ruby files
+/.bundle/
+/.yardoc
+/*.gem
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
