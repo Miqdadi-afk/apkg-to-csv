@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    apkg-to-csv (2.0.1)
+    apkg-to-csv (2.1.0)
       rubyzip (~> 2.3)
       sqlite3 (~> 1.6)
 
