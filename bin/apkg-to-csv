@@ -17,10 +17,15 @@ tempfile = Tempfile.new('db')
 
 Zip::File.open(filename) do |zip_file|
   zip_file.each do |entry|
-    if entry.name == 'collection.anki2'
-      tempfile.write(entry.get_input_stream.read)
-      file_written = true
+    if entry.name == 'collection.anki21b'
+      puts 'Please export with "Support older Anki versions" checked'
+      break
     end
+    next unless entry.name == 'collection.anki2' || entry.name == 'collection.anki21'
+
+    tempfile.write(entry.get_input_stream.read)
+    file_written = true
+    break
   end
 end
 
