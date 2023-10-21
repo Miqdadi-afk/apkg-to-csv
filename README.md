@@ -30,4 +30,4 @@ bundle install
 
 ## Running Tests
 
-* `bundle exec bash ./test/test.sh`
+* `bundle exec ./test/test.rb`
