@@ -13,7 +13,7 @@ unless filename
 end
 
 file_written = false
-tempfile = Tempfile.new('db')
+tempfile = Tempfile.new('db', binmode: true)
 
 Zip::File.open(filename) do |zip_file|
   zip_file.each do |entry|
@@ -35,5 +35,9 @@ unless file_written
 end
 
 db = SQLite3::Database.new(tempfile.path)
+csv = ApkgToCsv.csv(db).csv
 
-puts ApkgToCsv.csv(db).csv
+db.close
+tempfile.unlink
+
+puts csv
